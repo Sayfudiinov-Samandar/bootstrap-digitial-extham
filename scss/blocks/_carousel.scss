@@ -1,0 +1,188 @@
+main{
+    overflow-x: hidden;
+}
+
+.carousel-section{
+    background-color: #F5F5F5;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+.carousel-top {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carousel-top *{
+    font-family: 'Poppins';
+}
+.carousel-top-title{
+    width: 100%;
+    max-width: 545px;
+}
+.carousel-top-title p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 187.5%;    
+}
+
+.btn-movement {
+    position: relative;
+    right: 70px;
+    font-size: 40px;
+    margin: 0 5px;
+    cursor: pointer;
+    color: #555;
+    width: 30px;
+    height: 30px;
+    gap: 20px;
+    line-height: 19px;
+    border-radius: 3px;
+}
+
+.btn-next{
+    position: relative;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.12);
+    padding: 12px 16px;
+    border-radius: 50%;
+}
+
+.btn-next::before{
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    background-image: url("/images/strelka.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 8px;
+    height: 15px;
+}
+.btn-next:nth-child(2):before{
+    top: 8px;
+    left: 14px;
+    transform: rotate(180deg);
+}
+
+.carousel-boxes{
+    position: relative;
+    left: calc(50% + -850px);
+    z-index: 10;
+    display: -webkit-inline-box;
+    align-items: center;
+    gap: 30px;
+    overflow-x: scroll;
+    margin-top: 65px;
+}
+
+.carousel-boxes::-webkit-scrollbar {
+    overflow-x: scroll;
+    display: none;
+
+}
+
+.product{
+    width: 378px;
+    background-color: #fff;
+    left: 0;
+    transition: 0.5s;
+}
+
+.product a, h3, p{
+    font-family: 'Poppins';
+    font-size: 14px;
+    line-height: 187.5%;
+}
+
+.product-top-tex{
+    background-color: #dc00001a;
+}
+.product:nth-child(3) .product-top-tex{
+    background: #b000dc1c;
+    color: #B000DC;
+}
+.product:nth-child(4) .product-top-tex{
+    background: #0058dc17;;
+    color: #0058DC;
+}
+
+.carousel-title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 187.5%;
+}
+
+.carousel-box__link{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 187.5%;
+    color: #DC7000;
+}
+
+.carousel-box__link::after{
+    content: "";
+    position: absolute;
+    top: 7px;
+    right: -30px;
+    background-image: url("/images/ukazatel.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+}
+
+@media screen and (max-width: 750px) {
+    .btn-movement {
+        top: 75px;
+        right: 70px;
+    }
+    .carousel-boxes{
+        left: calc(50% + -345px);
+    }
+}
+@media screen and (max-width: 570px) {
+    .btn-movement {
+        top: 510px;
+        right: 110px;
+    }
+    .carousel-boxes{
+        left: calc(50% + -245px);
+    }
+}
+@media screen and (max-width: 450px) {
+    .btn-movement {
+        right: 70px;
+    }
+    .carousel-boxes{
+        left: calc(50% + -200px);
+    }
+    .product{
+        width: 350px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .btn-movement {
+        right: 70px;
+    }
+    .carousel-boxes{
+        left: calc(50% + -170px);
+    }
+    .product{
+        width: 350px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .btn-movement {
+        top: 540px;
+        right: 70px;
+    }
+    .carousel-boxes{
+        left: calc(50% + -170px);
+    }
+    .product{
+        width: 320px;
+    }
+}

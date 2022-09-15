@@ -1,0 +1,44 @@
+.read-section{
+    padding-top: 164px;
+    padding-bottom: 125px;
+}
+.read-text-box{
+    width: 100%;
+    max-width: 536px;
+}
+
+.read-title{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+}
+
+
+.read-top-text{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+    color: #515151;
+}
+.read-link{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: #DC7000;
+    padding: 10px 44px;
+
+}
+
+@media screen and (max-width: 1200px) {
+    .read-img{
+        margin-bottom: 20px;
+        width: 550px;
+        height: 400px;
+    }
+}
+@media screen and (max-width: 945px) {
+    .read-img{
+        width: 651px;
+        height: 468px;
+    }
+}

@@ -25,8 +25,12 @@ body{
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Poppins", "Arial", sans-serif !important;
+  font-family: "Poppins", "Arial", sans-serif;
   /* font-size: 16px; */
   font-weight: 400; 
   /* line-height: var(--main-line-height); */
+}
+
+body *{
+  font-family: 'Poppins';
 }

@@ -11,13 +11,21 @@
     max-width: 527px;
 }
 
+.hero-text-box a{
+    font-family: 'Poppins';
+}
+
 .hero-text-box h1 {
     // font-weight: 700;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
     font-size: 50px;
     line-height: 155.2%;
 }
 
 .hero-text-box p {
+    font-family: 'Poppins';
     font-size: 16px;
     line-height: 200%;
 }
@@ -33,6 +41,7 @@
 }
 
 .thecend-section__title {
+    font-family: 'Poppins';
     max-width: 826px;
     font-size: 25px;
     line-height: 187.5%;
@@ -40,11 +49,13 @@
 }
 
 .thecend-section h3 {
+    font-family: 'Poppins';
     font-size: 30px;
     line-height: 187.5%;
 }
 
 .thecend-section p {
+    font-family: 'Poppins';
     max-width: 545px;
     font-size: 16px;
     line-height: 187.5%;
