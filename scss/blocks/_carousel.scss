@@ -3,6 +3,7 @@ main{
 }
 
 .carousel-section{
+    position: relative;
     background-color: #F5F5F5;
     padding-top: 70px;
     padding-bottom: 100px;
@@ -42,35 +43,12 @@ main{
     border-radius: 3px;
 }
 
-.btn-next{
-    position: relative;
-    background-color: #FFFFFF;
-    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.12);
-    padding: 12px 16px;
-    border-radius: 50%;
-}
 
-.btn-next::before{
-    content: "";
-    position: absolute;
-    top: 8px;
-    left: 10px;
-    background-image: url("/images/strelka.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 8px;
-    height: 15px;
-}
-.btn-next:nth-child(2):before{
-    top: 8px;
-    left: 14px;
-    transform: rotate(180deg);
-}
+
+
+
 
 .carousel-boxes{
-    position: relative;
-    left: calc(50% + -850px);
-    z-index: 10;
     display: -webkit-inline-box;
     align-items: center;
     gap: 30px;
@@ -81,7 +59,7 @@ main{
 .carousel-boxes::-webkit-scrollbar {
     overflow-x: scroll;
     display: none;
-
+    
 }
 
 .product{
@@ -89,6 +67,7 @@ main{
     background-color: #fff;
     left: 0;
     transition: 0.5s;
+    margin-right: 38px;
 }
 
 .product a, h3, p{
@@ -100,12 +79,13 @@ main{
 .product-top-tex{
     background-color: #dc00001a;
 }
-.product:nth-child(3) .product-top-tex{
-    background: #b000dc1c;
+.product-top-tex-purpoe{
+    background-color: #b000dc1c;
     color: #B000DC;
 }
-.product:nth-child(4) .product-top-tex{
-    background: #0058dc17;;
+
+.product-top-tex-blue{
+    background-color: #0058dc17;
     color: #0058DC;
 }
 
@@ -134,6 +114,103 @@ main{
     height: 15px;
 }
 
+.owl-carousel{
+    position: static !important;
+}
+.owl-item{
+    width: 378px !important;
+    max-width: 378px;
+    height: 348px;
+    margin-right: 38px !important;
+}
+.owl-stage-outer{
+    height: 320px;
+    padding-bottom: 20px;
+}
+
+.owl-dots{
+    display: none;
+}
+.carousel-all-box{
+    margin: 0 auto;
+    max-width: 2000px;
+}
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+    position: relative !important;
+    color: inherit;
+    border: none;
+    padding: 0!important;
+    font: inherit;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.12);
+    padding: 12px 16px;
+    border-radius: 50%;
+}
+
+.owl-prev{
+    margin-right: 23px;    
+}
+
+.owl-prev span{
+    position: relative;
+}
+
+.owl-prev span::before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -1px;
+    background-image: url("/images/strelka.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 8px;
+    height: 15px;
+}
+
+.owl-next span{
+    position: relative;
+}
+
+.owl-next span::before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -2px;
+    background-image: url("/images/strelka.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 8px;
+    height: 15px;
+    transform: rotate(180deg);
+}
+
+.owl-nav{
+    position: absolute;
+    top: 20%;
+    right: calc(50% + -500px);
+}
+
+@media screen and (max-width: 1035px) {
+    .owl-nav{
+        position: absolute;
+        top: 20%;
+        right: calc(50% + -400px);
+    }
+    
+}
+@media screen and (max-width: 830px) {
+    .owl-nav{
+        position: absolute;
+        top: 30%;
+        right: calc(50% + -300px);
+    }
+    
+}
+
 @media screen and (max-width: 750px) {
     .btn-movement {
         top: 75px;
@@ -142,6 +219,22 @@ main{
     .carousel-boxes{
         left: calc(50% + -345px);
     }
+    .owl-nav{
+        position: absolute;
+        top: 89%;
+        right: calc(50% + -300px);
+    }
+}
+@media screen and (max-width: 615px) {
+    .owl-nav{
+        position: absolute;
+        top: 89%;
+        right: calc(50% + -250px);
+    }
+    .carousel-section{
+        padding-top: 55px;
+    }
+    
 }
 @media screen and (max-width: 570px) {
     .btn-movement {
@@ -151,6 +244,20 @@ main{
     .carousel-boxes{
         left: calc(50% + -245px);
     }
+}
+@media screen and (max-width: 515px) {
+    .owl-nav{
+        position: absolute;
+        top: 89%;
+        right: calc(50% + -200px);
+    }  
+}
+@media screen and (max-width: 415px) {
+    .owl-nav{
+        position: absolute;
+        top: 89%;
+        right: calc(50% + -150px);
+    }  
 }
 @media screen and (max-width: 450px) {
     .btn-movement {
@@ -162,6 +269,10 @@ main{
     .product{
         width: 350px;
     }
+    .owl-item{
+        width: 100% !important;
+        max-width: 332px;
+    }
 }
 @media screen and (max-width: 400px) {
     .btn-movement {
@@ -170,9 +281,10 @@ main{
     .carousel-boxes{
         left: calc(50% + -170px);
     }
-    .product{
-        width: 350px;
+    .owl-stage-outer{
+        height: 345px;
     }
+
 }
 @media screen and (max-width: 360px) {
     .btn-movement {

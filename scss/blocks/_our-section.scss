@@ -1,6 +1,5 @@
 .our-section{
     padding-top: 141px;
-    padding-bottom: 164px;
 }
 
 .our-section-top-box{
@@ -21,4 +20,26 @@
     line-height: 187.5%;
     color: #525252;
     margin-bottom: 71px;
+}
+
+
+
+.our-img-boxes{
+    gap: 25px;
+}
+
+.our-img-boxes div{
+    padding: 0;
+}
+
+.our-img{
+    width: 100%;
+    height: 223px;
+    margin: 0;
+}
+@media only screen and (max-width: 600px) {
+    .our-section{
+        padding-top: 60px;
+    }
+
 }

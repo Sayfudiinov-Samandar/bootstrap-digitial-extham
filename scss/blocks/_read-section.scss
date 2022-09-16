@@ -36,9 +36,25 @@
         height: 400px;
     }
 }
-@media screen and (max-width: 945px) {
+@media screen and (max-width: 600px) {
+    .read-section{
+        padding-top: 104px;
+        padding-bottom: 49px;
+    }
     .read-img{
-        width: 651px;
-        height: 468px;
+        margin-bottom: 0;
+        width: 450px;
+        height: 380px;
+    }
+    .read-title{
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 33px;
+    }
+    .read-top-text{
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        color: #515151;
     }
 }

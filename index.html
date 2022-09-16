@@ -8,24 +8,28 @@
   <title>Digital Marketing</title>
   <link rel="stylesheet" href="./bootstrap-5.2.1/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./style/owl.carousel.min.css">
+  <link rel="stylesheet" href="./style/owl.theme.default.min.css">
+
 </head>
 
 <body>
-  <div class="d-md-block d-none">
-    <div class="container d-flex justify-content-end py-1 ">
+  <div class="d-none d-md-block">
+    <div class="container">
+    <address class="d-flex justify-content-end py-1">
       <a class="d-flex align-items-center text-decoration-none pe-5 me-5 site-header-top" target="_blank"
-        href="https://www.google.com/maps/place/Najot+Ta'lim+Chilonzor+Filial/@41.2855421,69.2037181,21z/data=!4m9!1m2!2m1!1snajot+talim!3m5!1s0x38ae8ba578f4f58d:0xd7a2ecf23413b7a0!8m2!3d41.2855142!4d69.2038126!15sCgxuYWpvdCB0YSdsaW2SARBlZHVjYXRpb25fY2VudGVy4AEA">
-        <img class="me-3" src="./images/header-lactation.svg" width="12" height="12" alt="Symbal">
-        Company Address type here
-      </a>
-      <a class="d-flex align-items-center  text-decoration-none site-header-top me-2" target="_blank"
-        href="tel:+998........">
-        <img class="me-3" src="./images/header-phone.svg" width="12" height="12" alt="Symbal">
-        +94 000 00000
-      </a>
+      href="https://www.google.com/maps/place/Najot+Ta'lim+Chilonzor+Filial/@41.2855421,69.2037181,21z/data=!4m9!1m2!2m1!1snajot+talim!3m5!1s0x38ae8ba578f4f58d:0xd7a2ecf23413b7a0!8m2!3d41.2855142!4d69.2038126!15sCgxuYWpvdCB0YSdsaW2SARBlZHVjYXRpb25fY2VudGVy4AEA">
+      <img class="me-3" src="./images/header-lactation.svg" width="12" height="12" alt="Symbal">
+      Company Address type here
+    </a>
+    <a class="d-flex align-items-center  text-decoration-none site-header-top me-2" href="tel:+99899304142">
+      <img class="me-3" src="./images/header-phone.svg" width="12" height="12" alt="Company tel">
+      +998 99 304 14 42
+    </a>
+    </address>
     </div>
   </div>
-  <header class="header-site py-lg-3 md:py-4 py-4">
+  <header class="header-site py-4 md:py-4 py-lg-3">
     <div class="container">
       <div class="navbar navbar-expand-md bg-transparent p-0 ">
         <div class="container-fluid p-0">
@@ -40,16 +44,16 @@
           <nav class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <ul class="navbar-nav site-header-ul">
               <li>
-                <a class="nav-link  text-light fs-6" aria-current="page" href="#">Home</a>
+                <a class="nav-link  text-light  me-4" aria-current="page" href="#">Home</a>
               </li>
               <li>
-                <a class="nav-link  text-light fs-6" href="#">About us</a>
+                <a class="nav-link  text-light  me-3" href="#">About us</a>
               </li>
               <li>
-                <a class="nav-link  text-light fs-6">Services</a>
+                <a class="nav-link  text-light  me-2">Services</a>
               </li>
               <li>
-                <a class="nav-link  text-light fs-6" href="#">News</a>
+                <a class="nav-link  text-light  me-1" href="#">News</a>
               </li>
             </ul>
           </nav>
@@ -81,14 +85,14 @@
     <section class="thecend-section">
       <div class="container px-md-5">
         <div>
-          <h2 class="thecend-section__title w-100 mx-auto text-center fw-semibold mb-5">
+          <h2 class="thecend-section__title w-100 mx-auto mb-5 text-center fw-semibold ">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
           </h2>
 
-          <h3 class="fw-semibold mb-4 d-md-block d-none text-md-start text-center">
+          <h3 class="fw-semibold mb-4 d-none d-md-block text-center text-md-start ">
             Work Time
           </h3>
-          <p class="fw-normal w-100 d-md-block d-none">
+          <p class="fw-normal w-100 d-none d-md-block ">
             This volunteer work during your gap year travel is also as essential as the other work that involves
             traveling and going to another country.
           </p>
@@ -169,118 +173,170 @@
             <h1>Lorem Ipsum</h1>
             <p class="">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
           </div>
-          <div class="btn-movement d-flex ">
-            <span class="btn-next"></span>
-            <span class="btn-next prev"></span>
-          </div>
         </div>
       </div>
-      <div class="carousel-boxes">
-        <div class="product py-4 px-4 position-relative rounded-4 ">
-          <p class="btn bg-success py-2 ps-3 pe-4 d-inline-block mb-3 text-success  rounded-4"
-            style="--bs-bg-opacity: .2;">
-            Lorem ipsum
-          </p>
-          <h3 class="carousel-title text-dark mb-3">
-            Lorem Ipsum
-          </h3>
-          <p class="mb-4">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-            been the industry's standard dummy text ever since the 1500s,
-          </p>
-          <a class="carousel-box__link position-relative d-flex justify-content-end me-5 text-decoration-none "
-            href="#">
-            Read more
-          </a>
+
+
+      <div class="carousel-all-box">
+
+        <div class="owl-carousel carousel-boxes">
+          <div class="product py-4 px-4 position-relative rounded-4 ">
+            <p class="btn bg-success  py-2 ps-3 pe-4 d-inline-block mb-3 text-success rounded-4"
+              style="--bs-bg-opacity: .2;">
+              Lorem ipsum
+            </p>
+            <h3 class="carousel-title text-dark mb-3">
+              Lorem Ipsum
+            </h3>
+            <p class="mb-4">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+              been the industry's standard dummy text ever since the 1500s,
+            </p>
+            <a class="carousel-box__link position-relative d-flex justify-content-end me-5 text-decoration-none"
+              href="#">
+              Read more
+            </a>
+          </div>
+          <div class="product  py-4 px-4 position-relative rounded-4 ">
+            <p class="product-top-tex-purpoe  py-2 ps-3 pe-4 d-inline-block mb-3  rounded-4"
+              style="--bs-bg-opacity: .2;">
+              Lorem ipsum
+            </p>
+            <h3 class="carousel-title text-dark mb-3">
+              Lorem Ipsum
+            </h3>
+            <p class="mb-4">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+              been the industry's standard dummy text ever since the 1500s,
+            </p>
+            <a class="carousel-box__link position-relative d-flex justify-content-end me-5 text-decoration-none "
+              href="#">
+              Read more
+            </a>
+          </div>
+          <div class="product py-4 px-4 position-relative rounded-4 ">
+            <p class="product-top-tex-blue py-2 ps-3 pe-4 d-inline-block mb-3  rounded-4">
+              Lorem ipsum
+            </p>
+            <h3 class="carousel-title text-dark mb-3">
+              Lorem Ipsum
+            </h3>
+            <p class="mb-4">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+              been the industry's standard dummy text ever since the 1500s,
+            </p>
+            <a class="carousel-box__link position-relative d-flex justify-content-end me-5 text-decoration-none "
+              href="#">
+              Read more
+            </a>
+          </div>
+          <div class="product py-4 px-4 position-relative rounded-4 ">
+            <p class=" bg-success  py-2 ps-3 pe-4 d-inline-block mb-3 text-success rounded-4"
+              style="--bs-bg-opacity: .2;">
+              Lorem ipsum
+            </p>
+            <h3 class="carousel-title text-dark mb-3">
+              Lorem Ipsum
+            </h3>
+            <p class="mb-4">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+              been the industry's standard dummy text ever since the 1500s,
+            </p>
+            <a class="carousel-box__link position-relative d-flex justify-content-end me-5 text-decoration-none "
+              href="#">
+              Read more
+            </a>
+          </div>
+          <div class="product py-4 px-4 position-relative rounded-4">
+            <p class="product-top-tex-blue py-2 ps-3 pe-4 d-inline-block mb-3  rounded-4">
+              Lorem ipsum
+            </p>
+            <h3 class="carousel-title text-dark mb-3">
+              Lorem Ipsum
+            </h3>
+            <p class="mb-4">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+              been the industry's standard dummy text ever since the 1500s,
+            </p>
+            <a class="carousel-box__link position-relative d-flex justify-content-end me-5 text-decoration-none "
+              href="#">
+              Read more
+            </a>
+          </div>
+          <div class="product py-4 px-4 position-relative rounded-4 ">
+            <p class="product-top-tex-purpoe py-2 ps-3 pe-4 d-inline-block mb-3  rounded-4">
+              Lorem ipsum
+            </p>
+            <h3 class="carousel-title text-dark mb-3">
+              Lorem Ipsum
+            </h3>
+            <p class="mb-4">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+              been the industry's standard dummy text ever since the 1500s,
+            </p>
+            <a class="carousel-box__link position-relative d-flex justify-content-end me-5 text-decoration-none "
+              href="#">
+              Read more
+            </a>
+          </div>
         </div>
-        <div class="product  py-4 px-4 position-relative rounded-4 ">
-          <p class="product-top-tex py-2 ps-3 pe-4 d-inline-block mb-3 text-danger rounded-4">
-            Lorem ipsum
-          </p>
-          <h3 class="carousel-title text-dark mb-3">
-            Lorem Ipsum
-          </h3>
-          <p class="mb-4">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-            been the industry's standard dummy text ever since the 1500s,
-          </p>
-          <a class="carousel-box__link position-relative d-flex justify-content-end me-5 text-decoration-none "
-            href="#">
-            Read more
-          </a>
-        </div>
-        <div class="product py-4 px-4 position-relative rounded-4 ">
-          <p class="product-top-tex py-2 ps-3 pe-4 d-inline-block mb-3 text-danger rounded-4">
-            Lorem ipsum
-          </p>
-          <h3 class="carousel-title text-dark mb-3">
-            Lorem Ipsum
-          </h3>
-          <p class="mb-4">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-            been the industry's standard dummy text ever since the 1500s,
-          </p>
-          <a class="carousel-box__link position-relative d-flex justify-content-end me-5 text-decoration-none "
-            href="#">
-            Read more
-          </a>
-        </div>
-        <div class="product py-4 px-4 position-relative rounded-4 ">
-          <p class="product-top-tex py-2 ps-3 pe-4 d-inline-block mb-3 text-danger rounded-4">
-            Lorem ipsum
-          </p>
-          <h3 class="carousel-title text-dark mb-3">
-            Lorem Ipsum
-          </h3>
-          <p class="mb-4">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-            been the industry's standard dummy text ever since the 1500s,
-          </p>
-          <a class="carousel-box__link position-relative d-flex justify-content-end me-5 text-decoration-none "
-            href="#">
-            Read more
-          </a>
-        </div>
-        <div class="product py-4 px-4 position-relative rounded-4 ">
-          <p class="product-top-tex py-2 ps-3 pe-4 d-inline-block mb-3 text-danger rounded-4">
-            Lorem ipsum
-          </p>
-          <h3 class="carousel-title text-dark mb-3">
-            Lorem Ipsum
-          </h3>
-          <p class="mb-4">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-            been the industry's standard dummy text ever since the 1500s,
-          </p>
-          <a class="carousel-box__link position-relative d-flex justify-content-end me-5 text-decoration-none "
-            href="#">
-            Read more
-          </a>
-        </div>
-        <div class="product py-4 px-4 position-relative rounded-4 ">
-          <p class="product-top-tex py-2 ps-3 pe-4 d-inline-block mb-3 text-danger rounded-4">
-            Lorem ipsum
-          </p>
-          <h3 class="carousel-title text-dark mb-3">
-            Lorem Ipsum
-          </h3>
-          <p class="mb-4">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-            been the industry's standard dummy text ever since the 1500s,
-          </p>
-          <a class="carousel-box__link position-relative d-flex justify-content-end me-5 text-decoration-none "
-            href="#">
-            Read more
-          </a>
+
+      </div>
+
+
+
+
+    </section>
+
+
+    <section class="our-section">
+      <div class="container">
+        <div>
+          <div class="our-setion-top-box mx-auto">
+            <h3 class="our-title text-center">
+              Our Recent Projects
+            </h3>
+            <p class="our-text text-center">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </p>
+          </div>
+
+
+          <div class="px-4 p-lg-0">
+            <div class="row our-img-boxes justify-content-center b-0 mb-lg-4 m">
+              <div class="col-12 col-md-8 col-lg-4">
+                <img class="our-img" src="./images/fuzzy-book.png" alt="Read book">
+              </div>
+              <div class="col-12 col-md-8 col-lg-4">
+                <img class="our-img" src="./images/meetings.png" alt="Read book">
+              </div>
+              <div class="col-12 col-md-8 col-lg-3">
+                <img class="our-img d-none d-lg-block" src="./images/dark-light.png" alt="Read book">
+                <img class="our-img d-block d-lg-none" src="./images/two-women.png" alt="Read book">
+              </div>
+            </div>
+            <div class="row our-img-boxes justify-content-center gap-3 gap-lg-4 ">
+              <div class="col-12 col-md-8 col-lg-3">
+                <img class="our-img d-none d-lg-block" src="./images/only-woman.png" alt="Read book">
+              </div>
+              <div class="col-12 col-md-8 col-lg-4">
+                <img class="our-img d-none d-lg-block" src="./images/dark-meeting.png" alt="Read book">
+              </div>
+              <div class="col-12 col-md-8 col-lg-4">
+                <img class="our-img d-none d-lg-block" src="./images/two-women.png" alt="Read book">
+                <img class="our-img d-block d-lg-none" src="./images/dark-light.png" alt="Read book">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="read-section">
       <div class="container">
-        <div class="d-flex  justify-content-between flex-lg-row flex-column-reverse align-items-center">
+        <div class="d-flex  justify-content-between flex-column-reverse flex-lg-row  align-items-center">
 
-          <div class="read-img-box mb-5">
+          <div class="read-img-box mb-0 mb-md-5">
             <img class="read-img" src="./images/three-person-bottom-section-img.png" width="651" height="468"
               alt="Three person is happy">
           </div>
@@ -310,7 +366,7 @@
     </section>
 
 
-    <section>
+    <section class="form-section">
       <div class="container">
         <div>
           <div class="carousel-top form-top">
@@ -321,39 +377,132 @@
           </div>
 
           <div class="form-box d-flex flex-column flex-md-row justify-content-between align-items-md-center">
-            <div class="form-text-box mb-5 mb-md-0 ">
+            <div class="form-text-box mb-5 mb-md-0">
               <strong class="form-title text-white ">
                 Stay in the loop
               </strong>
               <p class="form-text text-white mt-5 mt-md-0">
                 Subscribe to receive the latest news and updates about TDA.
-                We promise not to spam you! 
+                We promise not to spam you!
               </p>
             </div>
-            <form class="form-form d-flex justify-content-between " action="https://echo.htmlacademy.ru/courses" target="_blank" autocomplete="off" method="get">
+            <form class="form-form d-flex justify-content-between" action="https://echo.htmlacademy.ru/courses"
+              target="_blank" autocomplete="off" method="get">
+              <!-- footerga targe berilgani email jonatganda boshqa list ga otishi uchun -->
               <label>
-                <input class="form-input" type="email" aria-label="Enter email" name="user_email" placeholder="Enter email address" required>
+                <input class="form-input" type="email" aria-label="Enter email" name="user_email"
+                  placeholder="Enter email address" required>
               </label>
-              <button class="form-btn d-inline-block">
+              <button class="form-btn d-inline-block" type="submit">
                 Continue
               </button>
             </form>
           </div>
 
         </div>
+      </div>
     </section>
   </main>
 
 
   </main>
 
-  <footer>
+  <footer class="site-footer bg-dark">
+    <div class="container">
+      <div class="d-none  d-lg-flex justify-content-between gap-4 site-footer-boxes">
+
+        <div class="footer-log-box">
+          <a class="footer-logo-link d-inline-block" href="./index.html">
+            <img src="./images/site-logo.svg" width="71" height="39" alt="Site footer logo">
+          </a>
+          <p class="footer-logo-text text-white">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          </p>
+          <p class="text-white">
+            @Company.com
+          </p>
+        </div>
+
+        <div class="footer-about-us-box">
+          <strong class="foot-title-abo-us text-white mb-3 d-inline-block">
+            About us
+          </strong>
+          <ul class="foot-list-abo-us list-unstyled">
+            <li class="footer-list-item">
+              <a href="#">
+                Company
+              </a>
+            </li>
+            <li class="footer-list-item">
+              <a href="#">
+                Portfolio
+              </a>
+            </li>
+            <li class="footer-list-item">
+              <a href="#">
+                Careers
+              </a>
+            </li>
+            <li class="footer-list-item">
+              <a href="#">
+                Contact us
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-contact-box">
+          <strong class="foot-title-abo-us text-white mb-3 d-inline-block">
+            Contact us
+          </strong>
+          <p class="footer-logo-text text-white">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          </p>
+          <p class="text-white">
+            +9000 0000 000
+          </p>
+        </div>
+
+        <div class="footer-links-symbal d-flex mt-auto">
+          <a href="https://www.facebook.com/profile.php?id=100084389711520">
+            <img src="./images/fackbook.svg" width="34" height="34" alt="Footer symbal">
+          </a>
+          <a href="https://www.instagram.com/sayfutdiinov/">
+            <img src="./images/instagram.svg" width="34" height="34" alt="Footer symbal">
+          </a>
+          <a href="https://mobile.twitter.com/Sayfutdiinov">
+            <img src="./images/twitter.svg" width="34" height="34" alt="Footer symbal">
+          </a>
+          <a href="https://www.linkedin.com/in/samandar-sayfutdinov-ba8304234/?originalSubdomain=uz">
+            <img src="./images/linkidin.svg" width="34" height="34" alt="Footer symbal">
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <span class="footer-center-line d-block">
+
+    </span>
+    <div class="container">
+      <div class="footer-bottom">
+        <p class="footer-bottom-text text-white text-center">
+          Copyright ® 2021 Company All rights Rcerved
+        </p>
+      </div>
+    </div>
   </footer>
+
+
 
 
 
   <script type="text/javascript" src="js/main.js"></script>
   <script src="./bootstrap-5.2.1/dist/js/bootstrap.min.js"></script>
+  <script src="./js/jquery.js"></script>
+  <script src="./js/owl.carousel.js"></script>
+  <script src="./js/main.js"></script>
+
 </body>
 
 </html>

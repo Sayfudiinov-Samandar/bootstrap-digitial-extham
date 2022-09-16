@@ -1,3 +1,8 @@
+
+.form-section{
+    padding-bottom: 148px;
+}
+
 .form-box{
     padding: 40px 50px 40px 55px;
     background-color: #1B1B1B;
@@ -57,3 +62,16 @@
     border-radius: 8px;
     border: none;
 }
+
+@media only screen and (max-width: 992px) {
+    .form-section{
+        padding-bottom: 69px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .form-top{
+        margin-bottom: 41px;
+    }
+
+}
+

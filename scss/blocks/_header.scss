@@ -1,12 +1,33 @@
 .header-site {
     background: linear-gradient(90.05deg, #E47500 -5.66%, #DF7C14 115.63%);
 }
+.container address{
+    margin: 0;
+}
 
 .site-header-ul {
     gap: 65px;
 }
 
+.site-header-ul li:nth-child(1){
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 14px;
+        left: -11px;
+        width: 11px;
+        height: 11px;
+        background-color: #fff;
+        border-radius: 50%;
+    }
+}
 
+.nav-link{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
 .dss {
     color: rgb(220, 112, 0);
 }
